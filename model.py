@@ -38,6 +38,8 @@ def recommendations_lembaga(index,number_of_recommendations=1):
 
   #j = 1
   #for i in recommendations_indices:
-  rekomendasi=data['nama'].iloc[recommendations_indices]
+  rekom_nama = data.loc[recommendations_indices, 'nama']
+  rekom_alamat=data['alamat'].iloc[recommendations_indices]
+  rekom_kontak=data['kontak'].iloc[recommendations_indices]
   #j += 1
-  return rekomendasi
+  return rekom_nama, rekom_alamat, rekom_kontak

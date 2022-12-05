@@ -16,12 +16,12 @@
     <div class="h-full">
         <div class="w-full h-20 bg-[#F29F05] flex justify-end items-center px-10 gap-20">
             <a href="/dashboard" class="flex gap-1 text-white p-2 rounded-lg w-40 items-center justify-center whitespace-nowrap">
-                <img src="/static/images/dashboard.png" alt="" class="h-8 w-8">
-                <p>Dashboard</p>
+              <img src="static/images/dashboard.png" width="33" height="33" alt="">
+              <p>Dashboard</p>
             </a>
             <a href="#" class="flex items-center gap-1 text-white">
                 <div class="h-8 w-8 rounded-full bg-[#0A525A]"></div>
-                <img src="static\images\logout.png" alt="" class="h-6 w-6 object-cover">
+                <iconify-icon icon="tabler:logout" width="35" height="35"></iconify-icon>
                 <p>Logout</p>
             </a>
         </div>
@@ -134,12 +134,13 @@
                       </div>
                       <div class="bg-[#f7d8a1] p-8 rounded-2xl mx-20 space-y-10 justify-center items-center">
                         <h3 class="text-center text-xl">Layanan yang tepat untuk anda</h2>
-                          {% if hasil_prediksi %}
+                          {% if hasil_alamat %}
                           <p>
                             nama    : <br/>{{hasil_nama}} <br/><br/> 
                             alamat  : <br/>{{hasil_alamat}} <br/><br/> 
-                            kontak  : <br/>{{hasil_kontak}}
-                            rekom   : {{rekom}}
+                            kontak  : <br/>{{hasil_kontak}} <br/><br/> 
+                            lembaga 2 : <br/>{{rekom1}} <br/><br/> 
+                            alamat2 : <br/>{{rekom2}} <br/><br/> 
                           </p>
                           {% endif %}
                       </div>
